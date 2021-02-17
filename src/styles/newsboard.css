@@ -5,3 +5,15 @@
   text-align: center;
   margin: 10px;
 }
+
+.Search{
+  display: inline-block;
+  text-align: center;
+}
+
+.story{
+  color: green;
+  margin: 30px;
+  border: 52px solid grey;
+  border-radius: 10px;
+}

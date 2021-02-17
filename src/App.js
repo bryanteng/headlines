@@ -7,9 +7,6 @@ function App() {
   return (
     <div className="App">
     <Header />
-      <header className="App-header">
-        Learn React
-      </header>
     <Newsboard />
     <Example />
     </div>

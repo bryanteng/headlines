@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
+import Story from '../components/story'
+import '../styles/newsboard.css'
 
 function News(){
 
@@ -19,13 +21,12 @@ function News(){
 
 
 return(
-  <div>
+  <div className="Newsboard">
     News board
-    {isLoading ? "News board loading" :
-    <ul>
-    {news.map(paper => <li> {paper.title} </li>)}
-    </ul>
-
+    {isLoading ? <div>News board loading</div> :
+      <Fragment class="Newsboard">
+        {news.map(paper => <Story id={paper.url} props={paper} /> )}
+      </Fragment>
   }
   </div>
 )
